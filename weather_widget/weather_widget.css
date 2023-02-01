@@ -1,0 +1,88 @@
+body {
+    background-color: #404856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35ch;
+
+}
+
+div {
+    
+    align-items: center;
+    width: 400px;
+    height: 540px;
+    padding: 20px;
+    position: absolute;
+    margin: auto;
+    border-radius: 25px;
+    background-image: linear-gradient(15deg, #f8fbfa 10%, #850ef5 100%)
+}
+
+p {
+    font-size: 16.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#ubicacionPedida {
+    font-family: monospace;
+    font-size: 1.4em;
+    color: rgb(10, 10, 50)
+}
+
+#icono {
+    position: relative;
+    left: 2%
+}
+
+.datos {
+    font-family: monospace;
+    font-size: 1.7em;
+
+}
+
+img {
+    animation-name: moverderechaizquierda;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes moverderechaizquierda {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 40%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@media (max-width: 520px) {
+
+
+    div {
+        align-items: center;
+        width: 300px;
+        height: 450px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        border-radius: 25px;
+        background-image: linear-gradient(15deg, #f8fbfa 10%, #850ef5 100%)
+    }
+
+    p {
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+}
